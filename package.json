@@ -1,0 +1,15 @@
+{
+  "name": "sapms",
+  "version": "1.0.0",
+  "description": "Student Attachment Placement Management System",
+  "scripts": {
+    "install:all": "npm install --prefix api && npm install --prefix client",
+    "build": "npm run build --prefix client",
+    "start": "node api/index.js",
+    "dev:api": "node api/index.js",
+    "dev:client": "npm start --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
